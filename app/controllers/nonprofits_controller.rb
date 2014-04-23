@@ -16,6 +16,7 @@ class NonprofitsController < ApplicationController
 
   def show
     @nonprofit = Nonprofit.find(params[:id])
+    @contribution = Contribution.new
   end
 
   def update

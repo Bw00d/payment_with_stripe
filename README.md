@@ -9,3 +9,7 @@
 * Finally, we need to actually pay out to the non-profits. Use Stripe transfers to pay out the donations to the non-profits.
 
 * Oh, and maybe we should add user auth at this point :)
+
+test secret key: sk_test_EHZUdaLuCAOFOg7MmY5AJyWY
+test publish key: pk_test_C5aNZXNKhyvCuV86RQf42ZN7
+

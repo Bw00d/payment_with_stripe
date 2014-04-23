@@ -3,8 +3,14 @@
 <head>
   <title><%= content_for?(:title) ? yield(:title)+" | Nonprofits" : "Nonprofits" %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "https://js.stripe.com/v2/", "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <%= tag :meta, name: "stripe-key", content: STRIPE_PUBLIC_KEY %>
+  <script type="text/javascript">
+  // This identifies your website in the createToken call below
+  Stripe.setPublishableKey('pk_test_C5aNZXNKhyvCuV86RQf42ZN7');
+  // ...
+</script>
 </head>
 <body>
 
