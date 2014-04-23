@@ -1,1 +1,15 @@
-<h2>Nonprofit</h2>
+<h2>Nonprofits</h2>
+
+<ul>
+  <% @nonprofits.each do |nonprofit| %>
+  <li> <%= nonprofit.name %> </li>
+  <% end %>
+</ul>
+
+
+
+<%= form_for @nonprofit, url: {action: "create"} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit "Create" %>
+<% end %>
