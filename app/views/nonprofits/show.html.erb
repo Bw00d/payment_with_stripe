@@ -1,0 +1,14 @@
+<%= content_for(:title, @nonprofit.name) %>
+
+<h2><%= @nonprofit.name %></h2>
+
+<p>_______________________</p>
+
+<h3>Edit</h3>
+<%= form_for @nonprofit, url: {action: "update"} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit "Update" %>
+<% end %>
+
+<%= link_to "Delete Nonprofit", nonprofit_path(@nonprofit), method: "delete" %>

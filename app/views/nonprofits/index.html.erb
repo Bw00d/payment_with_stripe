@@ -2,7 +2,7 @@
 
 <ul>
   <% @nonprofits.each do |nonprofit| %>
-  <li> <%= nonprofit.name %> </li>
+  <li> <%= link_to nonprofit.name, nonprofit_path(nonprofit) %> </li>
   <% end %>
 </ul>
 
