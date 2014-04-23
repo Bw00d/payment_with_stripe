@@ -9,6 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'rest-client'
 gem 'stripe'
+gem 'foundation-rails'
 
 group :development do
   gem 'better_errors'
