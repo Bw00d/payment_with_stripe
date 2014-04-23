@@ -1,6 +1,6 @@
 class CreateNonProfits < ActiveRecord::Migration
   def change
-    create_table :non_profits do |t|
+    create_table :nonprofits do |t|
       t.column :name, :string
     end
   end
